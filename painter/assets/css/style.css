@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Noto Sans", sans-serif;
+}
+/* CSS Default Variables */
+:root {
+    --yellow-color: #ffe468;
+    --dark-color : #272630;
+    --green-color: #8cc641;
+}
+a, span {
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+.header {
+    background-color: var(--yellow-color);
+    width: 100%;
+    height: 100vh;
+}
+.top-icons-border {
+    border-right: 2px solid #fff;
+    padding-right: 18px;
+}
+.green-icons {
+    color: #8CC641;
+    font-size: 20px;
+}
+.top-right-icons > a {
+    padding: 10px;
+    padding: 5px 20px;
+    border-right: 2px solid white;
+}
+.top-right-icons > a:last-child {
+    border: none;
+}
+.navbar {
+    /* background-color: var(--dark-color); */
+    padding: 20px 0;
+}
+.navbar-brand {
+    color: var(--yellow-color);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.call-us {
+    color: #ffe468;
+}
+.call-us::before {
+    content: "";
+    width: 6px;
+    background-color: var(--yellow-color);
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 282px;
+}
+.ri-smartphone-line {
+    font-size: 40px;
+}
+
+.hero {
+    background-image: url(../images/hero.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 680px;
+}
+.hero h1 {
+    font-size: 40px;
+}
+
+.greenBtn {
+    border-radius: 30px;
+    text-align: center;
+    padding: 15px 35px;
+    color: #fff;
+    border: 1px solid var(--green-color);
+}
+
+.greenBtnFill {
+    background-color: var(--green-color);
+}
+.greenBtnFill:hover {
+    background-color: var(--green-color);
+    color: #272630;
+    box-shadow: 3px 3px 4px 0px #00000021;
+}
+
+.greenBtn-outline {
+    transition: all  .3s ease-in;
+}
+.greenBtn-outline:hover {
+    background-color: var(--green-color);
+    color: var(--dark-color);
+    box-shadow: 3px 3px 4px 0px #00000021;
+}
+
+
+
+
+
+
+
+
+/* Responsive queries */
+
+@media screen and (min-width: 768px) {
+    .hero {
+        height: 545px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .hero h1 {
+        font-size: 70px;
+    } 
+}
